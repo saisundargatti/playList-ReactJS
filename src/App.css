@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.main-container {
+  background-color: #152850;
+  width: 100vw;
+  min-height: 100vh;
+}
+.bg-box {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/music-playlist/music-playlist-Edsheeran-bg.png');
+  background-size: cover;
+  width: 100vw;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 60px;
+}
+@media screen and (max-width: 767px) {
+  .bg-box {
+    height: 200px;
+  }
+}
+.singer_name {
+  font-family: Roboto;
+  font-size: 42px;
+  font-weight: 500;
+  color: White;
+  margin: 0px;
+}
+@media screen and (max-width: 767px) {
+  .singer_name {
+    font-size: 28px;
+  }
+}
+.profession {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 200;
+  color: White;
+}
+@media screen and (max-width: 767px) {
+  .profession {
+    font-size: 16px;
+  }
+}
+
+.songs_playlist {
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: 500;
+  margin-left: 40px;
+  color: White;
+}
+@media screen and (max-width: 767px) {
+  .songs_playlist {
+    font-size: 16px;
+  }
+}
+.list_props {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  max-width: 90vw;
+}
+@media screen and (max-width: 576px) {
+  .list_props {
+    flex-direction: column;
+  }
+}
+.displayProps {
+  display: flex;
+  flex-direction: row;
+}
+.song_image {
+  width: 200px;
+}
+@media screen and (max-width: 767px) {
+  .song_image {
+    max-width: 150px;
+  }
+  .list_props {
+    margin-bottom: 10px;
+  }
+}
+.ul_props {
+  margin-left: 40px;
+  padding: 0px;
+  height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 95%;
+}
+@media screen and (max-width: 767px) {
+  .ul_props {
+    max-width: 85%;
+  }
+}
+.holder {
+  margin-left: 20px;
+  width: 300px;
+}
+@media screen and (max-width: 767px) {
+  .holder {
+    width: 200px;
+  }
+}
+.song_name {
+  font-family: Roboto;
+  color: white;
+  font-size: 18px;
+}
+.song_genre {
+  font-family: Roboto;
+  color: #3b82f6;
+  font-size: 18px;
+}
+.button {
+  background-color: transparent;
+  border-style: none;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.icon_color {
+  color: white;
+}
+.input-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+.icon-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.delete_holder {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 576px) {
+  .delete_holder {
+    display: none;
+  }
+}
+.delete_holder_inner {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (min-width: 576px) {
+  .delete_holder_inner {
+    display: none;
+  }
+}
+
+.no_songs_found {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.not_found {
+  font-family: Roboto;
+  font-size: 36px;
+  color: white;
+}
